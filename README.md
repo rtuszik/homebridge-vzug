@@ -1,5 +1,7 @@
 # WIP - NOT WORKING
 
+This Plugin is a work in progress and is currently not functional. 
+
 # Homebridge V-ZUG Plugin
 
 This Homebridge plugin integrates V-ZUG appliances into Apple HomeKit using unofficial REST API.
