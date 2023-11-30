@@ -17,20 +17,41 @@ This Homebridge plugin integrates V-ZUG appliances into Apple HomeKit using unof
 Add the following configuration in your Homebridge `config.json`:
 
 ```json
-"platforms": [
-  {
-    "platform": "VZug",
-    "devices": [
-      {
-        "name": "V-ZUG Appliance",
-        "ip": "DEVICE_IP_ADDRESS"
-      }
-    ]
-  }
-]
+{
+  "platform": "VZugPlatform",
+  "devices": [
+    {
+      "name": "DEVICE_NAME",
+      "ip": "DEVICE_IP_ADDRESS"
+    }
+    // more devices can be added here
+  ]
+}
 ```
 
 Replace `DEVICE_IP_ADDRESS` with the IP address of your V-ZUG appliance.
+
+--
+
+Example `config.json`:
+
+```json
+{
+  "platform": "VZugPlatform",
+  "devices": [
+    {
+      "name": "Kitchen Oven",
+      "ip": "192.168.1.10"
+    },
+    {
+      "name": "Living Room Oven",
+      "ip": "192.168.1.11"
+    }
+  ]
+}
+```
+
+
 
 ## Features
 
