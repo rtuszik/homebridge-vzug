@@ -21,20 +21,26 @@ export class VZugAccessory {
     // Add the service to the accessory
     this.accessory.addService(this.service);
 
-    // Fetch initial status
-    this.fetchDeviceStatus();
+    // Set up polling to periodically fetch device status
+    setInterval(() => {
+      this.fetchDeviceStatus();
+    }, 10000); // Poll every 10 seconds (10000 milliseconds)
   }
 
   async fetchDeviceStatus() {
     try {
       const url = `http://${this.config.ip}/ai?command=getDeviceStatus`;
       const response = await axios.get(url);
-      const data = response.data;
+      if (response.status !== 200) {
+        throw new Error(`Unexpected response code: ${response.status}`);
+      }
 
+      const data = response.data;
       const isActive = data.Inactive === 'false';
       this.service.updateCharacteristic(this.api.hap.Characteristic.On, isActive);
     } catch (error) {
-      this.log.error('Error fetching device status:', error);
+      this.log.error('Error fetching device status:', error.message || 'Unknown error');
+      // Optionally, handle specific error scenarios here
     }
   }
 
@@ -43,13 +49,15 @@ export class VZugAccessory {
       const isActive = this.service.getCharacteristic(this.api.hap.Characteristic.On).value;
       callback(null, isActive);
     }).catch(error => {
-      callback(error);
+      this.log.error('Error in handleOnGet:', error.message || 'Unknown error');
+      callback(error, false);
     });
   }
 
   handleOnSet(value, callback) {
-    // Implement logic to set the new state, e.g., start/stop a program
+    // Implement logic to set the new state
     // This part is device-specific and depends on available API commands
+    // Handle errors appropriately, similar to handleOnGet
     callback(null);
   }
 }
