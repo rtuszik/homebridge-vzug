@@ -1,15 +1,35 @@
 {
-  "pluginAlias": "V-ZUG",
+  "pluginAlias": "homebridge-vzug",
   "pluginType": "platform",
   "singular": true,
   "schema": {
     "type": "object",
     "properties": {
-      "name": {
-        "title": "Name",
+      "platform": {
         "type": "string",
-        "required": true,
-        "default": "Example Dynamic Platform"
+        "default": "homebridge-vzug",
+        "readonly": true
+      },
+      "devices": {
+        "type": "array",
+        "title": "Devices",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Device Name",
+              "required": true
+            },
+            "ip": {
+              "type": "string",
+              "title": "Device IP Address",
+              "required": true,
+              "format": "ipv4"
+            }
+          }
+        },
+        "required": true
       }
     }
   }
