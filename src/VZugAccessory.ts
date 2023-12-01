@@ -1,5 +1,7 @@
 import { Service, PlatformAccessory, Logger, API } from 'homebridge';
 import axios from 'axios';
+import { DeviceConfig } from './VZugPlatform';
+
 
 export class VZugAccessory {
   private service: Service;
@@ -39,10 +41,14 @@ export class VZugAccessory {
       const isActive = data.Inactive === 'false';
       this.service.updateCharacteristic(this.api.hap.Characteristic.On, isActive);
     } catch (error) {
-      this.log.error('Error fetching device status:', error.message || 'Unknown error');
-      // Optionally, handle specific error scenarios here
+      if (error instanceof Error) {
+        this.log.error('Error fetching device status:', error.message);
+      } else {
+        this.log.error('An unknown error occurred in fetchDeviceStatus');
+      }
     }
   }
+
 
   handleOnGet(callback) {
     this.fetchDeviceStatus().then(() => {
