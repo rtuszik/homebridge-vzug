@@ -2,7 +2,7 @@
   "private": true,
   "displayName": "Homebridge V-ZUG",
   "name": "homebridge-vzug",
-  "version": "0.4.0",
+  "version": "1.0.0",
   "description": "Integration of V-ZUG Appliances using unofficial python API",
   "license": "Apache-2.0",
   "repository": {
@@ -39,5 +39,8 @@
     "rimraf": "^3.0.2",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
+  },
+  "peerDependencies": {
+    "homebridge": "^1.6.0"
   }
 }
