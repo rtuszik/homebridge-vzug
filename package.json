@@ -1,7 +1,7 @@
 {
-  "displayName": "Homebridge V-ZUG",
+  "displayName": "Homebridge-vzug",
   "name": "homebridge-vzug",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Integration of V-ZUG Appliances using unofficial python API",
   "license": "Apache-2.0",
   "repository": {

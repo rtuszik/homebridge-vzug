@@ -10,9 +10,9 @@ export class VZugAccessory {
     private readonly log: Logger,
     private readonly api: API,
     private readonly accessory: PlatformAccessory,
-    private readonly config: DeviceConfig, // Using DeviceConfig for consistency
+    private readonly config: DeviceConfig,
   ) {
-    // Assuming a Switch Service for demonstration (modify as needed)
+    // Assuming a Switch Service for demonstration
     this.service = new this.api.hap.Service.Switch(accessory.displayName);
 
     // Register handlers for the On/Off Characteristic
