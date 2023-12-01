@@ -1,7 +1,7 @@
 import { API, DynamicPlatformPlugin, Logger, PlatformConfig, PlatformAccessory } from 'homebridge';
 import { VZugAccessory } from './VZugAccessory';
 
-interface DeviceConfig {
+export interface DeviceConfig {
   name: string;
   ip: string;
 }
