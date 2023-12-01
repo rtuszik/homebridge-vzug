@@ -1,30 +1,51 @@
-import { API, DynamicPlatformPlugin, Logger, PlatformConfig, PlatformAccessory, Service, Characteristic } from 'homebridge';
+import { API, DynamicPlatformPlugin, Logger, PlatformConfig, PlatformAccessory } from 'homebridge';
+import { VZugAccessory } from './VZugAccessory';
+
+interface DeviceConfig {
+  name: string;
+  ip: string;
+}
 
 export class VZugPlatform implements DynamicPlatformPlugin {
+  private readonly accessories: PlatformAccessory[] = [];
+
   constructor(
     public readonly log: Logger,
     public readonly config: PlatformConfig,
-    public readonly api: API
+    public readonly api: API,
   ) {
-    log.info('Finished initializing platform:', config.name);
+    this.log.debug('Finished initializing platform:', config.name);
 
-    // Iterate over the configured devices and initialize them as accessories
     if (Array.isArray(config.devices)) {
       for (const device of config.devices) {
-        log.info('Initializing device:', device.name);
-        // Here, you would initialize each device. 
-        // Example: this.initializeDevice(device);
+        this.log.info('Initializing device:', device.name);
+        this.initializeDevice(device as DeviceConfig);
       }
     }
-  }
 
-  // Example method for initializing a device
-  initializeDevice(deviceConfig: any) {
-    // Logic to initialize a device as a PlatformAccessory
+    this.api.on('didFinishLaunching', () => {
+      this.log.debug('Executed didFinishLaunching callback');
+      // Perform further operations here if necessary
+    });
   }
 
   configureAccessory(accessory: PlatformAccessory) {
     this.log.info('Loading accessory from cache:', accessory.displayName);
-    // Logic to configure accessory from cache
+    this.accessories.push(accessory);
+  }
+
+  initializeDevice(deviceConfig: DeviceConfig) {
+    const uuid = this.api.hap.uuid.generate(deviceConfig.ip);
+    const existingAccessory = this.accessories.find(accessory => accessory.UUID === uuid);
+
+    if (existingAccessory) {
+      this.log.info('Restoring existing accessory from cache:', existingAccessory.displayName);
+      new VZugAccessory(this.log, this.api, existingAccessory, deviceConfig);
+    } else {
+      this.log.info('Adding new accessory:', deviceConfig.name);
+      const accessory = new this.api.platformAccessory(deviceConfig.name, uuid);
+      new VZugAccessory(this.log, this.api, accessory, deviceConfig);
+      this.api.registerPlatformAccessories('homebridge-vzug', 'VZugPlatform', [accessory]);
+    }
   }
 }

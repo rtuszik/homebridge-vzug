@@ -8,7 +8,7 @@ export class VZugAccessory {
     private readonly log: Logger,
     private readonly api: API,
     private readonly accessory: PlatformAccessory,
-    private readonly config: any,
+    private readonly config: DeviceConfig, // Using DeviceConfig for consistency
   ) {
     // Assuming a Switch Service for demonstration (modify as needed)
     this.service = new this.api.hap.Service.Switch(accessory.displayName);
