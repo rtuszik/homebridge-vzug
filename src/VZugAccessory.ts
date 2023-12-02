@@ -6,7 +6,7 @@ import * as path from 'path';
 
 export class VZugAccessory {
   private service: Service;
-  private models: any; // To store the model data
+  private models: ModelData[]; // To store the model data
 
   constructor(
     private readonly log: Logger,
