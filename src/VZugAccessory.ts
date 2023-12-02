@@ -4,6 +4,11 @@ import { DeviceConfig } from './VZugPlatform';
 import * as fs from 'fs';
 import * as path from 'path';
 
+interface ModelData {
+  Name: string;
+  Model: string;
+}
+
 export class VZugAccessory {
   private service: Service;
   private models: ModelData[]; // To store the model data
