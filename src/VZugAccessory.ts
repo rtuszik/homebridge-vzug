@@ -47,9 +47,14 @@ export class VZugAccessory {
         const modelNumber = serialNumber.substring(0, 5);
         const modelName = this.findModelName(modelNumber);
 
-        this.accessory.getService(this.api.hap.Service.AccessoryInformation)
-          .setCharacteristic(this.api.hap.Characteristic.SerialNumber, serialNumber)
-          .setCharacteristic(this.api.hap.Characteristic.Model, modelName);
+        const accessoryInfoService = this.accessory.getService(this.api.hap.Service.AccessoryInformation);
+        if (accessoryInfoService) {
+          accessoryInfoService
+            .setCharacteristic(this.api.hap.Characteristic.SerialNumber, serialNumber)
+            .setCharacteristic(this.api.hap.Characteristic.Model, modelName);
+        } else {
+          this.log.error('Accessory Information Service not found');
+        }
       }
     } catch (error) {
       this.log.error('Error fetching serial number:', error instanceof Error ? error.message : 'Unknown error');
@@ -66,9 +71,14 @@ export class VZugAccessory {
   }
 
   private setManufacturer() {
-    this.accessory.getService(this.api.hap.Service.AccessoryInformation)
-      .setCharacteristic(this.api.hap.Characteristic.Manufacturer, 'V-Zug');
+    const accessoryInfoService = this.accessory.getService(this.api.hap.Service.AccessoryInformation);
+    if (accessoryInfoService) {
+      accessoryInfoService.setCharacteristic(this.api.hap.Characteristic.Manufacturer, 'V-Zug');
+    } else {
+      this.log.error('Accessory Information Service not found');
+    }
   }
+
 
 
   async fetchDeviceStatus() {
