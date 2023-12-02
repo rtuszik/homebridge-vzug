@@ -1,0 +1,474 @@
+[
+  {
+    "Name": "AdoraDish V2000",
+    "Model": "41108, 41109"
+  },
+  {
+    "Name": "AdoraDish V4000",
+    "Model": "41110, 41112, 41114"
+  },
+  {
+    "Name": "AdoraDish V6000",
+    "Model": "41115, 41118, 41119, 41120, 41121, 41125"
+  },
+  {
+    "Name": "AdoraDry V2000",
+    "Model": "12011"
+  },
+  {
+    "Name": "AdoraDry V2000",
+    "Model": "12017"
+  },
+  {
+    "Name": "AdoraDry V6000",
+    "Model": "12013"
+  },
+  {
+    "Name": "AdoraDry V6000",
+    "Model": "12019"
+  },
+  {
+    "Name": "AdoraWash V2000",
+    "Model": "11021, 11041"
+  },
+  {
+    "Name": "AdoraWash V4000",
+    "Model": "11023, 11042"
+  },
+  {
+    "Name": "AdoraWash V6000",
+    "Model": "11025, 11043"
+  },
+  {
+    "Name": "Adorina CS",
+    "Model": "11018"
+  },
+  {
+    "Name": "AiroClearCabinet V4000",
+    "Model": "64009"
+  },
+  {
+    "Name": "AiroClearCabinet V4000",
+    "Model": "64010"
+  },
+  {
+    "Name": "AiroClearCabinet V4000",
+    "Model": "64011"
+  },
+  {
+    "Name": "AiroClearCabinet V6000",
+    "Model": "61058"
+  },
+  {
+    "Name": "AiroClearCabinet V6000",
+    "Model": "61060"
+  },
+  {
+    "Name": "AiroClearIsland V6000",
+    "Model": "63020"
+  },
+  {
+    "Name": "AiroClearWall V2000 V90",
+    "Model": "62032"
+  },
+  {
+    "Name": "AiroClearWall V4000",
+    "Model": "62026"
+  },
+  {
+    "Name": "AiroClearWall V4000 Q120",
+    "Model": "62031"
+  },
+  {
+    "Name": "AiroClearWall V6000",
+    "Model": "62028"
+  },
+  {
+    "Name": "AiroClearWall V6000",
+    "Model": "62029"
+  },
+  {
+    "Name": "CoffeeCenter V6000 45",
+    "Model": "25005"
+  },
+  {
+    "Name": "Combair V2000 45",
+    "Model": "21048"
+  },
+  {
+    "Name": "Combair V2000 60",
+    "Model": "21043"
+  },
+  {
+    "Name": "Combair V4000 45",
+    "Model": "21049"
+  },
+  {
+    "Name": "Combair V4000 45P",
+    "Model": "21058"
+  },
+  {
+    "Name": "Combair V4000 60",
+    "Model": "21045"
+  },
+  {
+    "Name": "Combair V4000 60P",
+    "Model": "21055"
+  },
+  {
+    "Name": "Combair V600 60",
+    "Model": "21126"
+  },
+  {
+    "Name": "Combair V6000 45",
+    "Model": "21050"
+  },
+  {
+    "Name": "Combair V6000 45",
+    "Model": "21067"
+  },
+  {
+    "Name": "Combair V6000 45P",
+    "Model": "21059"
+  },
+  {
+    "Name": "Combair V6000 45P",
+    "Model": "21070"
+  },
+  {
+    "Name": "Combair V6000 60",
+    "Model": "21047"
+  },
+  {
+    "Name": "Combair V6000 60",
+    "Model": "21068"
+  },
+  {
+    "Name": "Combair V6000 60P",
+    "Model": "21057"
+  },
+  {
+    "Name": "Combair V6000 60P",
+    "Model": "21073"
+  },
+  {
+    "Name": "CombairSteamer V2000 60",
+    "Model": "23036"
+  },
+  {
+    "Name": "CombairSteamer V6000 60",
+    "Model": "23038"
+  },
+  {
+    "Name": "CombairSteamer V6000 60",
+    "Model": "23049"
+  },
+  {
+    "Name": "CombiCookTop V2000 I804",
+    "Model": "31095"
+  },
+  {
+    "Name": "CombiCookTop V4000 I804",
+    "Model": "31096"
+  },
+  {
+    "Name": "CombiCooler V4000",
+    "Model": "51087"
+  },
+  {
+    "Name": "CombiCooler V4000 178 KNI",
+    "Model": "51114"
+  },
+  {
+    "Name": "CombiCooler V4000 178 NI",
+    "Model": "51108"
+  },
+  {
+    "Name": "CombiCooler V6000 Supreme",
+    "Model": "51096"
+  },
+  {
+    "Name": "CombiMiwell V4000 45",
+    "Model": "24025"
+  },
+  {
+    "Name": "CombiSteamer V4000 45",
+    "Model": "23031"
+  },
+  {
+    "Name": "CombiSteamer V6000 45",
+    "Model": "23032"
+  },
+  {
+    "Name": "CombiSteamer V6000 45",
+    "Model": "23043"
+  },
+  {
+    "Name": "CombiSteamer V6000 45F",
+    "Model": "23033"
+  },
+  {
+    "Name": "CombiSteamer V6000 45F",
+    "Model": "23045"
+  },
+  {
+    "Name": "CombiSteamer V6000 45L Grand",
+    "Model": "23034"
+  },
+  {
+    "Name": "CombiSteamer V6000 45L Grand",
+    "Model": "23046"
+  },
+  {
+    "Name": "CombiSteamer V6000 45M PowerSteam",
+    "Model": "23041"
+  },
+  {
+    "Name": "CombiSteamer V6000 45M PowerSteam",
+    "Model": "23047"
+  },
+  {
+    "Name": "CookTop Teppan Yaki I40",
+    "Model": "31140"
+  },
+  {
+    "Name": "CookTop V2000 I302",
+    "Model": "31160"
+  },
+  {
+    "Name": "CookTop V2000 I604",
+    "Model": "31159"
+  },
+  {
+    "Name": "CookTop V2000 I804",
+    "Model": "31146"
+  },
+  {
+    "Name": "CookTop V4000 I302",
+    "Model": "31143"
+  },
+  {
+    "Name": "CookTop V4000 I402",
+    "Model": "31144"
+  },
+  {
+    "Name": "CookTop V4000 I604",
+    "Model": "31115"
+  },
+  {
+    "Name": "CookTop V4000 I604",
+    "Model": "31157"
+  },
+  {
+    "Name": "CookTop V4000 I704",
+    "Model": "31116"
+  },
+  {
+    "Name": "CookTop V4000 I804",
+    "Model": "31158"
+  },
+  {
+    "Name": "CookTop V4000 I904",
+    "Model": "31142"
+  },
+  {
+    "Name": "CookTop V6000 A905",
+    "Model": "31155"
+  },
+  {
+    "Name": "CookTop V6000 I705 FullFlex",
+    "Model": "31132"
+  },
+  {
+    "Name": "CookTop V6000 I905",
+    "Model": "31114"
+  },
+  {
+    "Name": "CookTop V6000 I906 FullFlex",
+    "Model": "31134"
+  },
+  {
+    "Name": "Cooler V4000 178K",
+    "Model": "51121"
+  },
+  {
+    "Name": "Cooler V4000 178K (-T)",
+    "Model": "51124"
+  },
+  {
+    "Name": "Cooler V4000 178KG",
+    "Model": "51122"
+  },
+  {
+    "Name": "Cooler V6000 Supreme",
+    "Model": "51098, 51131"
+  },
+  {
+    "Name": "DF Premira SL",
+    "Model": "61037"
+  },
+  {
+    "Name": "DF Premira SL",
+    "Model": "61038"
+  },
+  {
+    "Name": "DFSG",
+    "Model": "61031"
+  },
+  {
+    "Name": "DFSG",
+    "Model": "61033"
+  },
+  {
+    "Name": "DI Premira",
+    "Model": "63016"
+  },
+  {
+    "Name": "DIAS",
+    "Model": "63009"
+  },
+  {
+    "Name": "DIQS10",
+    "Model": "63014"
+  },
+  {
+    "Name": "Drawer V2000 14",
+    "Model": "35005"
+  },
+  {
+    "Name": "DSMS downdraft hood",
+    "Model": "64005"
+  },
+  {
+    "Name": "DSTS9 downdraft hood",
+    "Model": "64004"
+  },
+  {
+    "Name": "DW Premira",
+    "Model": "62022"
+  },
+  {
+    "Name": "DW Premira",
+    "Model": "62023"
+  },
+  {
+    "Name": "DWQS",
+    "Model": "62019"
+  },
+  {
+    "Name": "DWQS",
+    "Model": "62021"
+  },
+  {
+    "Name": "FoodCenter V2000",
+    "Model": "52004"
+  },
+  {
+    "Name": "Freezer V4000 178N",
+    "Model": "53003"
+  },
+  {
+    "Name": "Freezer V4000 178N (-T)",
+    "Model": "53005"
+  },
+  {
+    "Name": "Freezer V6000 Supreme",
+    "Model": "51099"
+  },
+  {
+    "Name": "GAS311 dial controls",
+    "Model": "31073"
+  },
+  {
+    "Name": "GAS321 dial controls",
+    "Model": "31074"
+  },
+  {
+    "Name": "GAS411 multi-slider",
+    "Model": "31063"
+  },
+  {
+    "Name": "GAS421 multi-slider",
+    "Model": "31064"
+  },
+  {
+    "Name": "GAS641 multi-slider",
+    "Model": "31071"
+  },
+  {
+    "Name": "GAS731 dial controls",
+    "Model": "31075"
+  },
+  {
+    "Name": "GAS951 multi-slider",
+    "Model": "31072"
+  },
+  {
+    "Name": "Miwell V600 38",
+    "Model": "24019"
+  },
+  {
+    "Name": "Prestige T",
+    "Model": "51081"
+  },
+  {
+    "Name": "RefreshButler V6000",
+    "Model": "14003"
+  },
+  {
+    "Name": "Steamer V4000 38",
+    "Model": "23025"
+  },
+  {
+    "Name": "Steamer V4000 45",
+    "Model": "23026"
+  },
+  {
+    "Name": "VacuDrawer V6000 14",
+    "Model": "36004"
+  },
+  {
+    "Name": "VacuDrawer V6000 14",
+    "Model": "36005"
+  },
+  {
+    "Name": "WarmingDrawer V4000 14",
+    "Model": "34026"
+  },
+  {
+    "Name": "WarmingDrawer V4000 14",
+    "Model": "34027"
+  },
+  {
+    "Name": "WarmingDrawer V4000 22",
+    "Model": "34029"
+  },
+  {
+    "Name": "WarmingDrawer V4000 28",
+    "Model": "34030"
+  },
+  {
+    "Name": "WarmingDrawer V4000 31",
+    "Model": "34031"
+  },
+  {
+    "Name": "WineCooler UCSL 60",
+    "Model": "51093"
+  },
+  {
+    "Name": "WineCooler V4000 45",
+    "Model": "51113"
+  },
+  {
+    "Name": "WineCooler V4000 90",
+    "Model": "51102"
+  },
+  {
+    "Name": "WineCooler V6000",
+    "Model": "51095"
+  },
+  {
+    "Name": "WineCooler V6000 Supreme",
+    "Model": "51097"
+  }
+]

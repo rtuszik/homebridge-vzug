@@ -25,7 +25,6 @@ export class VZugPlatform implements DynamicPlatformPlugin {
 
     this.api.on('didFinishLaunching', () => {
       this.log.debug('Executed didFinishLaunching callback');
-      // Perform further operations here if necessary
     });
   }
 

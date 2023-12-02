@@ -2,6 +2,11 @@
 
 Integrate your V-ZUG appliances into Apple HomeKit using this Homebridge plugin, which currently supports status monitoring via an unofficial REST API. This plugin provides a HomeKit switch to reflect the operational status of your V-ZUG appliance, allowing you to check if the device is active.
 
+
+## Features
+
+- **Status Monitoring**: Exposes the operational status of your V-ZUG appliances as a switch in HomeKit, showing if the device is active.
+
 ## Installation
 
 1. **Install Homebridge**:
@@ -25,7 +30,6 @@ Add your V-ZUG appliances to your Homebridge `config.json`:
       "name": "DEVICE_NAME",
       "ip": "DEVICE_IP_ADDRESS"
     }
-    // Add more devices as needed
   ]
 }
 ```
@@ -48,15 +52,14 @@ Add your V-ZUG appliances to your Homebridge `config.json`:
 }
 ```
 
-## Current Functionality
-
-- **Status Monitoring**: The plugin currently exposes the operational status of your V-ZUG appliances as a switch in HomeKit, showing if the device is active.
 
 ## Supported Models
 
 - Currently tested with:
-  - V-Zug CombairSteamer V6000 60
+  - V-Zug CombairSteamer V6000 60Y
   - V-Zug CombairSteamer V6000 45F
+
+The plugin will automatically find the Model and Serial Number of your Device and populate the relevant fields for HomeKit
 
 ## Developer's Note
 
